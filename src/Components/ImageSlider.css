@@ -1,0 +1,147 @@
+.slide {
+    opacity: 0;
+    transition-duration: 1s ease;
+    overflow-y: hidden;
+    overflow-x: scroll;
+} 
+
+.slide.active {
+    opacity: 1;
+    transition-duration: 1s;
+    transform: scale(1.08);
+}  
+
+.slider{
+    position: relative;
+    width: 73%;
+    height: 94vh;
+    margin: auto;
+    overflow: hidden;
+    margin-top: 21px; 
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%); 
+}
+
+.scroll-wrapper {
+    width: 100%;
+    height: 100%;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    -ms-overflow-style: none; 
+    overflow: -moz-scrollbars-none; 
+    scrollbar-width: none;
+}
+  
+.scroll-wrapper::-webkit-scrollbar {
+     display: none; 
+}
+  
+.scroll-container {
+    display: inline-flex;
+    position: relative;
+    height: 175vh;
+}
+
+.image-count {
+    color: black;
+    margin-top: 12px;
+    z-index: 47;
+    position: absolute;
+    top: 8px;
+    right: 192px;
+}
+
+.image-count p {
+    font-size: 20px;
+}
+
+.img {
+    width: 100%;
+    height: 50%;
+    pointer-events: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.dots-container {
+    position: absolute;
+    width: 20%;
+    height: 20px;
+    bottom: 27px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    left: 39%;
+    display: flex;
+}
+
+@media screen and (min-device-width: 1000px) and (max-device-width: 1024px) {
+
+    .slider {
+        width: 96%;
+    }
+
+    .dots-container {
+        top: 1217px;
+    }
+
+    .image-count {
+        font-size: 23px;
+    }
+
+    .image-count {
+        top: -12px;
+        right: 46px;
+    }
+
+    .image-count p{
+        font-size: 40px;
+    }
+}
+
+@media only screen and (max-width: 768px), only screen and (max-device-width: 800px)  {
+
+    .slider {
+        width: 96%;
+    }   
+
+    .dots-container {
+        top: 1165px;
+    }
+
+    .image-count {
+        top: -16px;
+        right: 56px;
+    }
+
+    .image-count p{
+        font-size: 42px;
+    }
+}
+
+@media only screen and (max-width: 414px), only screen and (max-device-width: 450px) {
+
+    .slider {
+        width: 96%;
+        height: 85vh;
+        margin-top: 78px;
+    }
+
+    .dots-container {
+        top: 1565px;
+    }
+
+    .image-count {
+        top: 49px;
+        right: 56px;
+    }
+
+    .image-count p{
+        font-size: 52px;
+    }
+}
+
+
+

@@ -1,0 +1,27 @@
+.dot {
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: gray;
+    margin-left: 1.5%;
+    display: inline-block;
+    opacity: 0.6;
+}
+
+.dot.active {
+    background-color: #ff0039;
+    opacity: 1;
+}
+
+.dot:hover {
+    background-color: #ff0039;
+    opacity: 1;
+}
+
+@media only screen and (min-width: 768px) {
+    .dot {
+        width: 15px;
+        height: 15px;
+    }
+}
+
